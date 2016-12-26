@@ -1,4 +1,5 @@
 import paramiko
+import getpass
 
 print("""Select server:
 1: Plisko
@@ -18,7 +19,7 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 choice = input("Server:")
 if choice == "1":
     user = input("Enter username: ")
-    passwd = input("Enter password: ")
+    passwd = getpass.getpass()
     adduser = input("Enter neme new user: ")
     domain = input("Enter domain name: ")
     # userpass = input("Enter username password: ")
