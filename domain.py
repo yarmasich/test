@@ -5,7 +5,7 @@ print("""Select server:
 2: Nodejs""")
 
 user = "plisko"
-passwd = "159753cfthn"
+passwd = None
 domain = None
 adduser = None
 userpass = None
