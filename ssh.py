@@ -49,7 +49,7 @@ if choice == "1":
     client.close()
 elif choice == "2":
     user = input("Enter username: ")
-    passwd = input("Enter password: ")
+    passwd = getpass.getpass()
     adduser = input("Enter username: ")
     domain = input("Enter domain name: ")
     client.connect(hostname=plisko, username=user, password=passwd, port=port)
