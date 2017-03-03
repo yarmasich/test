@@ -6,7 +6,7 @@ print("""Select action:
 2: Delete domain name""")
 
 user = "admin"
-mikrotik = "nas2.oknet.pp.ua"
+mikrotik = "ip"
 port = 22
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
